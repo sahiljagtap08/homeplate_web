@@ -33,7 +33,7 @@ const slides = [
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);
-  const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const timerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined);
 
   const go = (n: number) => setCurrent(((n % slides.length) + slides.length) % slides.length);
 
