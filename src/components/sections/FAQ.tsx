@@ -58,7 +58,7 @@ export default function FAQ() {
               {faq.q}
               <motion.span
                 animate={{ rotate: open === i ? 180 : 0 }}
-                transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
                 className="shrink-0"
               >
                 <ChevronDown size={18} className="text-[#71717A]" />
@@ -71,7 +71,7 @@ export default function FAQ() {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: "auto", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                   style={{ overflow: "hidden" }}
                 >
                   <p className="text-[15px] text-[#71717A] leading-[1.72] pb-5">

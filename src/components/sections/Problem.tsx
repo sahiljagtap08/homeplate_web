@@ -15,7 +15,7 @@ const container = {
 };
 const item = {
   hidden: { opacity: 0, x: -16 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.55, ease: [0.16, 1, 0.3, 1] } },
+  show: { opacity: 1, x: 0, transition: { duration: 0.55, ease: "easeOut" } },
 };
 
 export default function Problem() {
@@ -26,7 +26,7 @@ export default function Problem() {
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.65, ease: "easeOut" }}
       >
         <h2 className="text-[clamp(28px,3vw,44px)] font-black tracking-[-0.045em] leading-[1.15] mb-4">
           Senior Center Kitchens Are the Most Underused Asset in Senior Care
@@ -64,7 +64,7 @@ export default function Problem() {
         initial={{ opacity: 0, y: 32, scale: 0.97 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden p-7 flex flex-col gap-3 min-h-[400px]"
       >
         <div className="bg-white/20 rounded-xl px-4 py-2.5 flex items-center gap-2 text-[13px] font-semibold text-white">

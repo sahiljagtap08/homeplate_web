@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           exit={{ height: 0, opacity: 0 }}
-          transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+          transition={{ duration: 0.35, ease: "easeInOut" }}
           style={{ overflow: "hidden" }}
         >
           <div className="bg-[#E8470A] text-white text-center px-5 py-2.5 text-[13.5px] font-medium flex items-center justify-center gap-2 relative">

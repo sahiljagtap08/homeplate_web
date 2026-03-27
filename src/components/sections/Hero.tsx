@@ -13,7 +13,7 @@ function WordReveal({ words }: { words: string[] }) {
           key={i}
           initial={{ opacity: 0, y: 28, filter: "blur(6px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.65, delay: 0.25 + i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.65, delay: 0.25 + i * 0.1, ease: "easeOut" }}
           className="inline-block mr-3"
           style={{ display: i === 2 ? "block" : "inline-block" }}
         >
@@ -64,7 +64,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, delay: 0.55, ease: "easeOut" }}
           className="text-[17px] text-[#71717A] max-w-[490px] mx-auto mb-10 leading-[1.65] px-4"
         >
           HomePlate turns your senior center's idle kitchen into a fully operational
@@ -75,7 +75,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.6, delay: 0.65, ease: "easeOut" }}
           className="max-w-[540px] mx-auto mb-3.5 px-4"
         >
           <motion.div
@@ -106,7 +106,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.55, delay: 0.75, ease: "easeOut" }}
           className="max-w-[540px] mx-auto px-4"
         >
           <div className="bg-white border border-[#E4E2DE] rounded-2xl px-5 py-3.5 flex items-center justify-between shadow-sm">
@@ -135,7 +135,7 @@ export default function Hero() {
         style={{ x: illoLeftX, y: illoY }}
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.9, delay: 0.5, ease: "easeOut" }}
         className="absolute bottom-0 left-0 w-[260px] pointer-events-none hidden lg:block"
       >
         <svg viewBox="0 0 280 340" fill="none">
@@ -165,7 +165,7 @@ export default function Hero() {
         style={{ x: illoRightX, y: illoY }}
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.9, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.9, delay: 0.55, ease: "easeOut" }}
         className="absolute bottom-0 right-0 w-[260px] pointer-events-none hidden lg:block"
       >
         <svg viewBox="0 0 280 340" fill="none">

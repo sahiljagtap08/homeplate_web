@@ -27,7 +27,7 @@ export default function WhyNow() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-[#18181B] rounded-[20px] p-14"
       >
         <h2 className="text-[clamp(22px,2.8vw,34px)] font-black text-white tracking-[-0.04em] mb-4">
@@ -47,7 +47,7 @@ export default function WhyNow() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.55, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.55, delay: i * 0.1, ease: "easeOut" }}
               whileHover={{ y: -4 }}
               className="bg-white/[0.05] border border-white/[0.08] rounded-2xl p-6"
             >

@@ -35,7 +35,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -64, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1], delay: 0.1 }}
+      transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
       className={cn(
         "sticky top-0 z-[100] transition-all duration-300",
         scrolled
@@ -77,7 +77,7 @@ export default function Navbar() {
                       initial={{ opacity: 0, y: -8, scale: 0.96 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                      transition={{ duration: 0.18, ease: [0.4, 0, 0.2, 1] }}
+                      transition={{ duration: 0.18, ease: "easeInOut" }}
                       className="absolute top-[calc(100%+8px)] left-0 bg-white border border-[#E4E2DE] rounded-2xl p-2 min-w-[210px] shadow-[0_8px_40px_rgba(0,0,0,0.10)] z-50"
                     >
                       {dropdowns[key].map((item) => (

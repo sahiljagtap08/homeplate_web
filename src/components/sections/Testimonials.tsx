@@ -49,7 +49,7 @@ export default function Testimonials() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-center mb-12"
       >
         <h2 className="text-[clamp(32px,4vw,50px)] font-black tracking-[-0.045em] leading-[1.1] mb-4">
@@ -73,7 +73,7 @@ export default function Testimonials() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden"
       >
         {/* Logo bar */}
@@ -100,7 +100,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -40 }}
-              transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
               className="grid grid-cols-[200px_1fr_320px] min-h-[380px]"
             >
               {/* Left side illustration */}

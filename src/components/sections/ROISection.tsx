@@ -18,7 +18,7 @@ export default function ROISection() {
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.65, ease: "easeOut" }}
       >
         <h2 className="text-[clamp(26px,3vw,40px)] font-black tracking-[-0.045em] leading-[1.2] mb-4">
           What Does Idle Kitchen<br />Time Actually Cost You?
@@ -93,7 +93,7 @@ export default function ROISection() {
         initial={{ opacity: 0, y: 32, scale: 0.97 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden p-7 flex flex-col gap-3 min-h-[460px]"
       >
         <div className="bg-white rounded-full px-4 py-2 inline-flex items-center gap-2 text-[13px] font-semibold text-[#18181B] self-start mb-2">

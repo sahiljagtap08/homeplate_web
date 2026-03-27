@@ -16,7 +16,7 @@ export default function Partners() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.65, ease: "easeOut" }}
       >
         <h2 className="text-[clamp(24px,2.8vw,34px)] font-black tracking-[-0.04em] mb-3">
           Partner with HomePlate
@@ -43,7 +43,7 @@ export default function Partners() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
-            transition={{ duration: 0.55, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.55, delay: i * 0.08, ease: "easeOut" }}
             whileHover={{ y: -4, boxShadow: "0 10px 32px rgba(0,0,0,0.08)" }}
             className="bg-white border border-[#E4E2DE] rounded-2xl p-6 cursor-default transition-shadow"
           >

@@ -10,9 +10,6 @@ export default function CTA() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", center: "", city: "", email: "", phone: "", capacity: "" });
 
-  const letters = useMemo(() =>
-    Array.from({ length: 380 }, (_, i) => WORD[i % WORD.length]), []);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
@@ -24,7 +21,7 @@ export default function CTA() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden relative min-h-[440px] flex flex-col items-center justify-center text-center px-10 py-20 noise"
       >
         {/* Letter bg */}

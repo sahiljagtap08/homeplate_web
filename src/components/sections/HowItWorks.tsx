@@ -31,7 +31,7 @@ export default function HowItWorks() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden px-16 py-16 relative noise"
       >
         {/* Background decorative lines */}
@@ -58,7 +58,7 @@ export default function HowItWorks() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.55, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.55, delay: i * 0.1, ease: "easeOut" }}
               whileHover={{ y: -4 }}
               className="bg-white/12 border border-white/20 rounded-2xl p-7 backdrop-blur-sm relative"
             >

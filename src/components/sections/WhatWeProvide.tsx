@@ -32,7 +32,7 @@ const container = {
 
 const card = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 export default function WhatWeProvide() {
@@ -42,7 +42,7 @@ export default function WhatWeProvide() {
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="grid grid-cols-2 gap-10 mb-12 items-end"
       >
         <h2 className="text-[clamp(24px,2.8vw,38px)] font-black tracking-[-0.04em] leading-[1.2]">

@@ -34,7 +34,7 @@ export default function RevenueStreams() {
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden px-16 py-16 grid grid-cols-2 gap-16 items-center min-h-[460px] relative"
       >
         {/* Left text */}
@@ -71,7 +71,7 @@ export default function RevenueStreams() {
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
                 whileHover={{ x: 4 }}
                 className="bg-white/15 border border-white/25 rounded-2xl px-5 py-4 text-white backdrop-blur-sm"
               >

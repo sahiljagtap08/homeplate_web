@@ -17,7 +17,7 @@ export default function PilotStories() {
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
         className="bg-[#E8470A] rounded-[20px] overflow-hidden p-12 grid grid-cols-[280px_1fr] gap-10 min-h-[240px] relative"
       >
         {/* Text */}
